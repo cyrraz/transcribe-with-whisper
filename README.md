@@ -1,6 +1,6 @@
 # transcribe-with-whisper
 
-This project records and transcribe audio using the Whisper model.
+This project records and transcribes audio using the Whisper model.
 
 ## Installation
 
