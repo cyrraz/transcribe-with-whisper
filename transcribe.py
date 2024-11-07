@@ -6,6 +6,7 @@ import logging
 import argparse
 
 # Initialize the Whisper model
+# Take time the first time you run this command, as the model is downloaded from the internet
 model = whisper.load_model("medium")
 
 # Configure logging for better output control
@@ -58,8 +59,8 @@ def main(duration, samplerate):
     duration (int): The duration of the recording in seconds.
     samplerate (int): The sample rate of the audio data in Hz.
     """
-    audio_data = record_audio(duration)
-    transcribe_audio(audio_data)
+    audio_data = record_audio(duration, samplerate)
+    transcribe_audio(audio_data, samplerate)
 
 
 if __name__ == "__main__":
