@@ -1,0 +1,2 @@
+sounddevice==0.5.1
+openai-whisper==20240930
